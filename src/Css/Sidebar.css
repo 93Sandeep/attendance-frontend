@@ -1,0 +1,356 @@
+
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&family=Rubik+Doodle+Triangles&display=swap');
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 300px;
+  background: #faf7f7;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.employee-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  table-layout: fixed; 
+}
+
+.employee-table th, .employee-table td {
+  border: 2px solid #ddd;
+  padding: 15px;
+  text-align: center; 
+}
+
+.employee-table th {
+  background-color: #f2f2f2;
+}
+
+.sidebar li {
+  padding: 50px;
+  cursor: pointer;
+  color: rgb(70, 68, 68);
+  font-size: 18px;
+  font-weight: 500;
+  border-bottom: 1px solid #ddd;
+}
+
+.sidebar li:hover {
+  background-color: #ddd;
+}
+
+.sign-out {
+  padding: 8px;
+  cursor: pointer;
+  background-color: #ffffff;
+  color: black;
+  border: none;
+  text-align: center;
+}
+
+.right-content {
+  flex-grow: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 2px -2px rgba(199, 90, 90, 0.2);
+  margin-bottom: 55px;
+}
+
+.right-content h2{
+  margin-top: 10px;
+  font-size: 32px;
+  font-weight: 300;
+  text-align: center;
+  color: #0c0b0b;
+  font-family: Rubik Doodle Triangles;
+}
+
+.employee-info {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.user-info{
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.box {
+  flex: 1;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 20px;
+  height: 100px;
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.box-icon {
+  position: absolute;
+  left: 10px;
+  top: 40px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.box-info {
+  margin-top: auto;
+
+}
+
+#box1 {
+  background: linear-gradient(to right, #6d8ad2 40%, #ffffff 30%);
+  border: 1px solid #6d8ad2;
+  color: #6d8ad2;
+  margin-right: 20px;
+  border-radius: 7px;
+}
+
+#box2 {
+  background: linear-gradient(to right, #46be6e 40%, #ffffff 30%);
+  border: 1px solid #46be6e;
+  color: #46be6e;
+  border-radius: 7px;
+  margin-right: 20px;
+}
+
+#box3 {
+  background: linear-gradient(to right, #ff9500 40%, #ffffff 30%);
+  border: 1px solid #ff9500;
+  color: #ff9500;
+  border-radius: 7px;
+  margin-right: 20px;
+}
+
+#box4 {
+  background: linear-gradient(to right, #7f6fc4 40%, #ffffff 30%);
+  border: 1px solid #7f6fc4;
+  color: #7f6fc4;
+  border-radius: 7px;
+  margin-right: 20px;
+}
+
+#box5 {
+  background: linear-gradient(to right, #fdd234 40%, #ffffff 30%);
+  border: 1px solid #fdd234;
+  color: #fdd234;
+  border-radius: 7px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.box:last-child {
+  margin-right: 0;
+}
+
+.user-info {
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    padding: 10px;
+    order: 2;
+  }
+
+  .right-content {
+    order: 1;
+    padding: 10px;
+  }
+
+  .employee-info {
+    flex-direction: column;
+  }
+
+  .box {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .box-icon {
+    left: 10px;
+    top: 10px;
+  }
+
+  .box-info {
+    text-align: center;
+  }
+}
+
+/* @import '~@fortawesome/fontawesome-free/css/all.min.css';
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 300px;
+  background: #ededed;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.sidebar li {
+  padding: 50px;
+  cursor: pointer;
+  color: rgb(70, 68, 68);
+  font-size: 18px;
+  font-weight: 500;
+  border-bottom: 1px solid #ddd;
+}
+
+.sidebar li:hover {
+  background-color: #ddd;
+}
+
+.sign-out {
+  padding: 8px;
+  cursor: pointer;
+  background-color: #ffffff;
+  color: black;
+  border: none;
+  text-align: center;
+}
+
+.right-content {
+  flex-grow: 1;
+  overflow-y: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 2px -2px rgba(199, 90, 90, 0.2);
+  margin-bottom: 55px;
+}
+
+.employee-info {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.user-info {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.box {
+  flex: 1;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 20px;
+  height: 100px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.box-icon {
+  position: absolute;
+  left: 20px;
+  top: 40px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.box-text {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.box-info {
+  margin-top: auto;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.box:nth-child(2),
+.box:nth-child(3),
+.box:nth-child(1),
+.box:nth-child(4),
+.box:nth-child(5) {
+  margin-right: 20px;
+  border-radius: 7px;
+}
+
+.box:nth-child(2) {
+  background: linear-gradient(to right, #6d8ad2 40%, #ffffff 30%);
+  border: 1px solid #6d8ad2;
+  color: #6d8ad2;
+}
+
+.box:nth-child(3) {
+  background: linear-gradient(to right, #46be6e 40%, #ffffff 30%);
+  border: 1px solid #46be6e;
+  color: #46be6e;
+}
+
+.box:nth-child(1) {
+  background: linear-gradient(to right, #ff9500 40%, #ffffff 30%);
+  border: 1px solid #ff9500;
+  color: #ff9500;
+}
+
+.box:nth-child(4) {
+  background: linear-gradient(to right, #7f6fc4 40%, #ffffff 30%);
+  border: 1px solid #7f6fc4;
+  color: #7f6fc4;
+}
+
+.box:nth-child(5) {
+  background: linear-gradient(to right, #fdd234 40%, #ffffff 30%);
+  border: 1px solid #fdd234;
+  color: #fdd234;
+  margin-bottom: 20px;
+}
+
+.box:last-child {
+  margin-right: 0
+} */

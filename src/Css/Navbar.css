@@ -1,0 +1,32 @@
+   .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+.navbar img {
+    height: 40px;
+    width: auto;
+ margin-left: 75px;
+}
+
+.navbar button {
+    padding: 8px 12px;
+    margin-left: 10px;
+    background-color: #fff;
+    color: black;
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar button:hover {
+    background-color: #caccca;
+}
